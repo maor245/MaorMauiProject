@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using MaorMauiProject.Views;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace MaorMauiProject
 {
@@ -12,7 +13,8 @@ namespace MaorMauiProject
         protected override Window CreateWindow(IActivationState? activationState)
         {
             //return new Window(new AppShell());
-            return new Window(new Test());
+            //return new Window(new SignInPage());
+            return new Window(new SignUpPage());
         }
     }
 }
