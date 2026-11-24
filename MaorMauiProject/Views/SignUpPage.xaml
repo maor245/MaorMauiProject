@@ -17,13 +17,13 @@
         <HorizontalStackLayout
             Grid.Column ="1"
             HorizontalOptions ="Center"
-            VerticalOptions ="Center">  
-            
+            VerticalOptions ="Center">
+
             <!--כותרת-->
             <Label
                 TextColor ="White"
                 Text ="Create Account"
-                FontSize ="24"/>    
+                FontSize ="24"/>
         </HorizontalStackLayout>
 
         <VerticalStackLayout
@@ -38,14 +38,114 @@
                 StrokeShape ="RoundRectangle 8"
                 StrokeThickness ="1">
                 <Entry
-                    FontSize ="18 "
+                    FontSize ="18"
                     Placeholder ="First Name"
                     TextColor ="Wheat"
                     Text =""/>
             </Border>
+
+            <!--שדה שם משפחה-->
+            <Border
+                Margin ="0,0,0,10"
+                Padding ="10"
+                Stroke ="#ccc"
+                StrokeShape ="RoundRectangle 8"
+                StrokeThickness ="1">
+                <Entry
+                FontSize ="18"
+                Placeholder ="Last Name"
+                TextColor ="Wheat"
+                Text =""/>
+            </Border>
+
+            <!--שדה דואל-->
+            <Border
+                Margin ="0,0,0,10"
+                Padding ="10"
+                Stroke ="#ccc"
+                StrokeShape =" RoundRectangle 8"
+                StrokeThickness ="1">
+                <Entry
+                Keyboard ="Email"
+                FontSize ="18"
+                Placeholder ="Email"
+                TextColor ="Wheat"
+                Text =""/>
+            </Border>
+
+            <!--שדה סיסמה-->
+            <Border
+                Margin ="0,0,0,10"
+                Stroke ="#ccc"
+                StrokeShape =" RoundRectangle 8"
+                StrokeThickness ="1">
+                <Grid
+                    Padding ="10"
+                    ColumnDefinitions ="*,Auto"
+                    VerticalOptions ="Center">
+                    <Entry                    
+                        IsPassword ="True"
+                        BackgroundColor ="Transparent"
+                        FontSize ="18"
+                        Placeholder ="Password"
+                        TextColor ="Wheat"
+                        VerticalOptions ="Center"
+                        Text =""/>
+                        <Button
+                            Margin ="5,0,0,0"
+                            Padding ="0"
+                            BackgroundColor ="Transparent"
+                            FontSize ="24"
+                            HorizontalOptions ="End"
+                            TextColor ="White"
+                            VerticalOptions ="Center"                           
+                            Text ="EYE"
+                            />
+                </Grid >
+            </Border >
+
+            <!--שדה מספר נייד-->
+            <Border
+                Margin ="0,0,0,10"
+                Padding ="10"
+                Stroke ="#ccc"
+                StrokeShape =" RoundRectangle 8"
+                StrokeThickness ="1">
+                <Entry
+                Keyboard ="Telephone"
+                FontSize ="18"
+                Placeholder ="Mobile"
+                TextColor ="Wheat"
+                Text =""/>
+            </Border>
+
+            <!--כפתור כניסה-->
+            <Button
+                CornerRadius ="8"
+                FontSize ="20"
+                HeightRequest ="70"
+                Text ="Sign Up"
+                TextColor ="White"/>
+
+
+            <!-- Already have an account?-->
+            <HorizontalStackLayout
+            HorizontalOptions ="Center"
+            VerticalOptions ="Center">
+                <Label
+            Margin ="14,0,0,0"
+            VerticalTextAlignment ="Center"
+            TextColor ="White"
+            Text ="Already have an account?"
+            FontSize ="16"/>
+                <Button
+            BackgroundColor ="Transparent"
+            FontSize ="16"
+            TextColor ="BlueViolet"
+            Text ="SignIn"/>
+            </HorizontalStackLayout>
+            
+            
         </VerticalStackLayout>
-
     </Grid>
-
-
 </ContentPage>

@@ -3,16 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MaorMauiProject.Views.SignInPage"
              Title="SignInPage">
-  
+
     <!--<ContentPage.Background>
-        <LinearGradientBrush StartPoint="0, 0" EndPoint="1, 1">
-            <GradientStop Offset="0.0" Color="Purple" />
-            <GradientStop Offset="0.5" Color="Blue" />
-            <GradientStop Offset="1.0" Color="LightCyan" />
+        <LinearGradientBrush StartPoint ="0,0" EndPoint ="1,1">
+            <GradientStop Offset ="0.0" Color ="LightCyan"/>
+            <GradientStop Offset ="0.5" Color ="#3a7bd5"/>
+            <GradientStop Offset ="1.0" Color ="Purple"/>
         </LinearGradientBrush>
-        </ContentPage.Background>
-    
+    </ContentPage.Background>
+
     <VerticalStackLayout
-        Padding="30"
-        Spacing="25"-->
+        Padding ="30"
+        Spacing ="25"
+        VerticalOptions ="Center">
+        <Border
+            Padding ="10"
+            Stroke ="#ccc"
+            StrokeShape ="RoundRectangle 8"
+            StrokeThickness ="1">
+            <Entry
+            x:Name="UsernameEntry"
+            Keyboard ="Email"
+            FontSize ="18"
+            Placeholder ="Email"
+            TextColor ="Wheat"
+            ReturnType ="Go">
+            </Entry>
+        </Border >
+    </VerticalStackLayout>-->
+
+
 </ContentPage>
