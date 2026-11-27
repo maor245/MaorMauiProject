@@ -14,7 +14,7 @@ namespace MaorMauiProject
         {
             //return new Window(new AppShell());
             //return new Window(new SignInPage());
-            return new Window(new SignUpPage());
+            return new Window(new SignUpView());
         }
     }
 }
